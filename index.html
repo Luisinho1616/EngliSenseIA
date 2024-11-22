@@ -22,6 +22,20 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen en la parte izquierda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .imagen-izquierda {
+            position: absolute;
+            top: 120px; /* Separación de 80px desde la parte superior */
+            left: 0; /* Coloca la imagen en la esquina izquierda */
+        }
+    </style>
   </head>
   <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -75,6 +89,7 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/main-logo.jpeg" class="logo">
           </a>
+          <img src="images/Bacilio logo.jpg" alt="Imagen" class="imagen-izquierda">
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="navbar-icon" width="50" height="50">
               <use xlink:href="#navbar-icon"></use>
@@ -188,83 +203,50 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="featured-products">
-      <div class="container-lg">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <div class="display-header mt-0 text-center mb-5">
-            <h2 class="display-4 text-primary">Portafolio</h2>
-            <p class="fs-5">En este espacio iran las fotos de los avances de EngliSenseIA</p>
+      <section id="team-members">
+        <div class="container-lg">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <div class="display-header mt-0 text-center mb-5">
+              <h2 class="display-4 text-primary">Nuestro Equipo</h2>
+              <p class="fs-5">Conoce a los integrantes del equipo y sus roles</p>
+            </div>
+          </div>
+          <!-- Integrantes -->
+          <div class="row">
+            <!-- Primer integrante (arriba) -->
+            <div class="col-12 text-center mb-4">
+              <div class="team-card">
+                <img src="images/LUCHO.jpg" alt="Integrante 1" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h3 class="fs-4">Luis Yamunaque</h3>
+                <p>Rol: Líder del proyecto</p>
+                <a href="https://instagram.com/luimgp_16" target="_blank" class="text-primary">@luimgp_16</a>
+              </div>
+            </div>
+          </div>
+          <!-- Segundo y tercer integrante (abajo) -->
+          <div class="row">
+            <!-- Segundo integrante -->
+            <div class="col-md-6 text-center mb-4">
+              <div class="team-card">
+                <img src="images/PROFE CRISANTO.jpg" alt="Integrante 2" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h3 class="fs-4">Prof. Juan Carlos</h3>
+                <p>Docente de EPT</p>
+                <p>Teléfono: +51 979 994 228</p>
+              </div>
+            </div>
+            <!-- Tercer integrante -->
+            <div class="col-md-6 text-center mb-4">
+              <div class="team-card">
+                <img src="images/PROFE PAULA.jpg" alt="Integrante 3" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <h3 class="fs-4">Prof. Paula Seminario</h3>
+                <p>Docente de Ingles</p>
+                <p>Teléfono: +51 981 748 597</p>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="swiper product-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product-card position-relative mb-5">
-                  <div class="image-holder zoom-effect">
-                    <a href="#">
-                      <img src="IMAGEN AVANCE 1" alt="product-item" class="img-fluid rounded-5">
-                    </a>
-                    <div class="cart-concern position-absolute w-100 d-flex justify-content-center align-items-center">
-                    </div>
-                  </div>
-                  <div class="card-detail text-center position-absolute rounded-4 bg-white p-4 border mx-auto">
-                    <h3 class="card-title fs-4 mt-0 mx-auto">
-                      <a href="single-product.html" class="text-dark">Avance 1</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder zoom-effect">
-                    <a href="#">
-                      <img src="IMAGEN AVANCE 2" alt="product-item" class="img-fluid rounded-5">
-                    </a>
-                    <div class="cart-concern position-absolute w-100 d-flex justify-content-center align-items-center">
-                    </div>
-                  </div>
-                  <div class="card-detail text-center position-absolute rounded-4 bg-white p-4 border mx-auto">
-                    <h3 class="card-title fs-4 mt-0 mx-auto">
-                      <a href="single-product.html" class="text-dark">Avance 2</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder zoom-effect">
-                    <a href="#">
-                      <img src="IMAGEN AVANCE 3" alt="product-item" class="img-fluid rounded-5">
-                    </a>
-                    <div class="cart-concern position-absolute w-100 d-flex justify-content-center align-items-center">
-                    </div>
-                  </div>
-                  <div class="card-detail text-center position-absolute rounded-4 bg-white p-4 border mx-auto">
-                    <h3 class="card-title fs-4 mt-0 mx-auto">
-                      <a href="single-product.html" class="text-dark">Avance 3</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder zoom-effect">
-                    <a href="#">
-                      <img src="images/AVANCE 4" alt="product-item" class="img-fluid rounded-5">
-                    </a>
-                    <div class="cart-concern position-absolute w-100 d-flex justify-content-center align-items-center">
-                    </div>
-                  </div>
-                  <div class="card-detail text-center position-absolute rounded-4 bg-white p-4 border mx-auto">
-                    <h3 class="card-title fs-4 mt-0 mx-auto">
-                      <a href="single-product.html" class="text-dark">Avance 4</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-    </section>
+      </section>      
     <section id="company-services">
       <div class="container-lg">
         <div class="row">
