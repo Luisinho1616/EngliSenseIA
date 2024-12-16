@@ -194,6 +194,31 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <!-- Imagen superior -->
+      <div class="text-center mb-3">
+        <img src="images/UBICACION.png" alt="Imagen del lugar" class="img-fluid" style="max-width: 100%; height: auto;">
+      </div>
+  
+      <!-- Botón para mostrar ubicación -->
+      <div class="text-center mb-3">
+        <button onclick="mostrarMapa(https://maps.app.goo.gl/EgLeDWZTkVTbQto7A)" class="btn btn-primary">Ver ubicación</button>
+      </div>
+  
+      <!-- Mapa de Google Maps -->
+      <div class="map-container">
+        <iframe id="mapa" 
+                src="https://maps.app.goo.gl/EgLeDWZTkVTbQto7A" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>  
+  </section>
         <section id="about" class="py-lg-9">
       <div class="container">
         <div class="row justify-content-center">
